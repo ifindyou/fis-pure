@@ -1,11 +1,13 @@
 fis.config.set('pack', {
-    'pkg/lib.js': [
+    'pkg/js/main.js': [
         '/modules/underscore/**.js',
         '/modules/backbone/**.js',
         '/modules/jquery/**.js',
         '/modules/vendor/**.js',
-        '/modules/common/**.js'
-    ]
+        '/modules/common/**.js',
+        '/modules/app/**.js'
+    ],
+    'pkg/css/main.css':'/modules/app/**.css'
 });
 
 //静态资源域名，使用pure release命令时，添加--domains或-D参数即可生效
